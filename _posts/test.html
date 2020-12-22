@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        /*
+        html5doctor.com Reset Stylesheet
+        v1.6.1
+        Last Updated: 2010-09-17
+        Author: Richard Clark - http://richclarkdesign.com
+        Twitter: @rich_clark
+        */
+
+        html, body, div, span, object, iframe,
+         h3, h4, h5, h6, p, blockquote, pre,
+        abbr, address, cite, code,
+        del, dfn, em, img, ins, kbd, q, samp,
+        small, strong, sub, sup, var,
+        b, i,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section, summary,
+        time, mark, audio, video {
+            margin:0;
+            padding:0;
+            border:0;
+            outline:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+        }
+
+        body {
+            line-height:1;
+        }
+
+        article,aside,details,figcaption,figure,
+        footer,header,hgroup,menu,nav,section {
+            display:block;
+        }
+
+        nav ul {
+            list-style:none;
+        }
+
+        blockquote, q {
+            quotes:none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content:'';
+            content:none;
+        }
+
+        a {
+            margin:0;
+            padding:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+        }
+
+        /* change colours to suit your needs */
+        ins {
+            background-color:#ff9;
+            color:#000;
+            text-decoration:none;
+        }
+
+        /* change colours to suit your needs */
+        mark {
+            background-color:#ff9;
+            color:#000;
+            font-style:italic;
+            font-weight:bold;
+        }
+
+        del {
+            text-decoration: line-through;
+        }
+
+        abbr[title], dfn[title] {
+            border-bottom:1px dotted;
+            cursor:help;
+        }
+
+        table {
+            border-collapse:collapse;
+            border-spacing:0;
+        }
+
+        /* change border colour to suit your needs */
+        hr {
+            display:block;
+            height:1px;
+            border:0;  
+            border-top:1px solid #cccccc;
+            margin:1em 0;
+            padding:0;
+        }
+
+        input, select {
+            vertical-align:middle;
+        }
+/*-------------------------------------------------------------------------------------------*/
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        /* header */
+        header {
+            width: 960px;
+            height: 250px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        #main_title{
+            display: block;
+            width: 960px;
+            position: absolute;
+            top: 50px;
+            left: 2px;
+        }
+
+        #gnb {
+            display: block;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+        }
+
+        #gnb > ul {
+            overflow: hidden;
+        }
+
+        #gnb > ul > li {
+            float: left;
+        }
+
+        #gnb a {
+            padding: 2px 5px;
+            display: block;
+            border: 1px solid black;
+        }
+
+        #gnb li:first-child > a{
+            border-radius: 5px 0 0 5px;
+        }
+        #gnb li:last-child > a{
+            border-radius: 0 5px 5px 0;
+        }
+        
+        #lnb {
+            display: block;
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+        }
+
+        #lnb > ul {
+            overflow: hidden;
+        }
+
+        #lnb > ul > li {
+            float: left;
+        }
+
+        #lnb a {
+            padding: 5px 15px;
+            display: block;
+            border: 1px solid black;
+        }
+
+        #lnb li:first-child > a{
+            border-radius: 5px 0 0 5px;
+        }
+        #lnb li:last-child > a{
+            border-radius: 0 5px 5px 0;
+        }
+        /* wrap */
+        #wrap{
+            width: 960px;
+            height: auto;
+            margin: 5px auto;
+            padding-top: 5px;
+            overflow: hidden;
+        }
+
+        section{
+            width: 700px;
+            float: left;
+        }
+
+        aside{
+            width: 250px;
+            float: right;
+            overflow: hidden;
+        }
+
+        aside label {
+            width: 120px;
+            margin: 0 auto;
+            padding: 2px 0px;
+            display: block;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        aside label:first-child{
+            display: block;
+            float: left;
+            border-radius: 5px 0 0 5px;
+        }
+
+        aside label:last-child{
+            display: block;
+            float: left;
+            border-radius: 0 5px 5px 0;
+        }
+
+        #prev_btn{
+            display: none;
+        }
+
+        #prev_btn ~ #prev_list{
+            display: none;
+        }
+
+        #prev_btn:checked ~ #prev_list{
+            display: block;
+        }
+
+        #prev_btn:checked ~ #button > label:first-child{
+            background-color: black;
+            color: white;
+        }
+        #next_btn{
+            display: none;
+        }
+
+        #next_btn ~ #next_list{
+            display: none;
+        }
+
+        #next_btn:checked ~ #next_list{
+            display: block;
+        }
+
+        #next_btn:checked ~ #button > label:last-child{
+            background-color: black;
+            color: white;
+        }
+
+        aside li{
+            width: 240px;
+            padding: 10px 0px;
+            border: 1px solid black;
+            border-top: none;
+            border-radius: 3px 3px 3px 3px;
+            overflow: hidden;
+        }
+
+        #aside_thumbnail{
+            margin-left: 10px;
+            float: left;
+        }
+
+        #description{
+            float: left;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+
+        #description > strong{
+            display: block;
+            width: 150px;
+            white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+        }
+
+        #description a{
+            display: block;
+            width: 150px;
+            color: blue;
+            white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+        }
+        /* footer */
+        footer{
+            width: 960px;
+            margin: 10px auto;
+            border: 2px solid black;
+            text-align: center;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <div id="main_title">
+            <h1>This is on1ystar's layout practice</h1>
+            <h2>I am seongjin</h2>
+        </div>
+        <nav>
+            <div id="gnb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">project</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </div>
+            <div id="lnb">
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                    <li><a href="#">REACT</a></li>
+                    <li><a href="#">NODE</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="wrap">
+        <hr>
+        <section>
+            <div id="content">
+                <h2>Starbucks</h2>
+                <p>Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. As the world's largest coffeehouse chain, Starbucks is seen to be the main representation of the United States' second wave of coffee culture.[6][7] As of early 2020, the company operates over 30,000 locations worldwide in more than 70 countries. Starbucks locations serve hot and cold drinks, whole-bean coffee, microground instant coffee known as VIA, espresso, caffe latte, full- and loose-leaf teas including Teavana tea products, Evolution Fresh juices, Frappuccino beverages, La Boulange pastries, and snacks including items such as chips and crackers; some offerings (including their annual fall launch of the Pumpkin Spice Latte) are seasonal or specific to the locality of the store.</p>
+            </div>
+            <div id="content">
+                <h2>Founding</h2>
+                <p>The first Starbucks was opened in Seattle, Washington, on March 30, 1971,[9] by three partners who met while they were students at the University of San Francisco:[10] English teacher Jerry Baldwin, history teacher Zev Siegl, and writer Gordon Bowker were inspired to sell high-quality coffee beans and equipment by coffee roasting entrepreneur Alfred Peet after he taught them his style of roasting beans.[11] Bowker recalls that Terry Heckler, with whom Bowker owned an advertising agency, thought words beginning with "st" were powerful. The founders brainstormed a list of words beginning with "st," and eventually landed on "Starbo," a mining town in the Cascade Range. From there, the group remembered "Starbuck," the name of the chief mate in the book Moby-Dick.[12] Bowker said, "Moby-Dick didn't have anything to do with Starbucks directly; it was only coincidental that the sound seemed to make sense."</p>
+            </div>
+            <div id="content">
+                <h2>Sale and expansion</h2>
+                <p>In 1984, the original owners of Starbucks, led by Jerry Baldwin, purchased Peet's Coffee.[17] By 1986, the company operated six stores in Seattle[18] and had only just begun to sell espresso coffee.[19] In 1987, the original owners sold the Starbucks chain to former manager Howard Schultz, who rebranded his Il Giornale coffee outlets as Starbucks and quickly began to expand the company.[20] That same year, Starbucks opened its first locations outside of Seattle in Waterfront Station in Vancouver, British Columbia, and Chicago, Illinois.[21] By 1989, 46 Starbucks stores existed across the Northwest and Midwest, and the company was roasting more than 2,000,000 pounds (907,185 kg) of coffee annually.[18] At the time of its initial public offering (IPO) on the stock market in June 1992, Starbucks had 140 outlets, with revenue of US$73.5 million, up from US$1.3 million in 1987. The company's market value was US$271 million by this time.</p>
+            </div>
+        </section>
+        <aside>
+            <input type="radio" id="prev_btn" checked >
+            <input type="radio" id="next_btn" >
+            <div id="button">
+                <label for="prev_btn" >prev</label>
+                <label for="next_btn" >next</label>
+            </div>
+            <div id="prev_list">
+                <ul>
+                    <li>
+                        <img id="aside_thumbnail" src="https://via.placeholder.com/70x70">
+                        <div id="description">
+                            <a href="#">
+                                <strong>Roger Penrose</strong>
+                                <div id="aside_date">2020-12-20</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img id="aside_thumbnail" src="https://via.placeholder.com/70x70">
+                        <div id="description">
+                            <a href="">
+                                <strong>Reinhard Genzel</strong>
+                                <div id="aside_date">2020-12-20</div>
+                            </a>    
+                        </div>
+                    </li>
+                    <li>
+                        <img id="aside_thumbnail" src="https://via.placeholder.com/70x70">
+                        <div id="description">
+                            <a href="">
+                                <strong>Andrea M. Ghez</strong>
+                                <div id="aside_date">2020-12-20</div>
+                            </a>    
+                        </div>
+                    </li>
+                    <li>
+                        <img id="aside_thumbnail" src="https://via.placeholder.com/70x70">
+                        <div id="description">
+                            <a href="">
+                                <strong>Alexei Alexeyevich Abrikosov</strong>
+                                <div id="aside_date">2020-12-20</div>
+                            </a>    
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="next_list">
+                <ul>
+                    <li>
+                        <img id="aside_thumbnail" src="https://via.placeholder.com/70x70">
+                        <div id="description">
+                            <strong>Roger Penrose</strong>
+                            <div id="aside_date">2020-12-20</div>
+                        </div>
+                    </li>
+                    <li>
+                        <img id="aside_thumbnail" src="https://via.placeholder.com/70x70">
+                        <div id="description">
+                            <a href="">
+                                <strong>Reinhard Genzel</strong>
+                                <div id="aside_date">2020-12-20</div>
+                            </a>    
+                        </div>
+                    </li>
+                    <li>
+                        <img id="aside_thumbnail" src="https://via.placeholder.com/70x70">
+                        <div id="description">
+                            <a href="">
+                                <strong>Andrea M. Ghez</strong>
+                                <div id="aside_date">2020-12-20</div>
+                            </a>    
+                        </div>
+                    </li>
+                    <li>
+                        <img id="aside_thumbnail" src="https://via.placeholder.com/70x70">
+                        <div id="description">
+                            <a href="">
+                                <strong>Alexei Alexeyevich Abrikosov</strong>
+                                <div id="aside_date">2020-12-20</div>
+                            </a>    
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <h2>empty</h2>
+    </footer>
+</body>
+</html>
