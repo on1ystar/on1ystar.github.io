@@ -27,8 +27,6 @@ __같이 일하고 싶은 Back-End 개발자__ _in the future_
 - 쓸만한 프로젝트 배포
 - 취업
 
-#### - 하기 싫은 거
-~~입대~~
-
 e-mail: tjdwls0607@naver.com  
 github: <https://on1ystar.github.com>
+notion: https://www.notion.so/on1ystar/09252fb7426b40608c51c86f8e028f5c
