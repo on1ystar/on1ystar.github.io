@@ -77,7 +77,7 @@ testArr.forEach((item, index, arr) => {
 - 원본 배열은 변경되지 않음
 - `map` 메서드를 호출한 배열과 `map` 메서드가 생성하여 반환한 배열은 반드시 **1:1 매핑**
 
-`map`은 `sort`와 사용할 때 유용할 수 있음 (`[map`을 활용한 `sort` 효율성 증대](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#map을_사용한_정렬))
+`map`은 `sort`와 사용할 때 유용할 수 있음 ([`map`을 활용한 `sort` 효율성 증대](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#map을_사용한_정렬))
 
 ```jsx
 // 소트 할 배열
@@ -151,7 +151,7 @@ console.log(filterItems("an")); // ['banana', 'mango', 'orange']
 });
 ```
 
-<img href="./public/img/1.jpg">
+<img data-action="zoom" src='{{ "/public/img/2.jpg" | absolute_url }}' >
 
 ```jsx
 // 초기값을 사용한 경우
@@ -167,7 +167,7 @@ console.log(filterItems("an")); // ['banana', 'mango', 'orange']
 10);
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4bbb0834-2921-4589-b3e6-4803acdab1f1/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4bbb0834-2921-4589-b3e6-4803acdab1f1/Untitled.png)
+<img data-action="zoom" src='{{ "/public/img/1.jpg" | absolute_url }}' >
 
 - 하나의 결과값을 반환
 - 원본 배열은 변경하지 않음
