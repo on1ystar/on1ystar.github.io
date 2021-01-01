@@ -151,7 +151,7 @@ console.log(filterItems("an")); // ['banana', 'mango', 'orange']
 });
 ```
 
-<img data-action="zoom" src="/img/2.JPG" >
+![ex_screenshot](./img/2.JPG)
 
 ```jsx
 // 초기값을 사용한 경우
@@ -167,7 +167,7 @@ console.log(filterItems("an")); // ['banana', 'mango', 'orange']
 10);
 ```
 
-<img src="/img/1.JPG" >
+![ex_screenshot](./img/1.JPG)
 
 - 하나의 결과값을 반환
 - 원본 배열은 변경하지 않음
