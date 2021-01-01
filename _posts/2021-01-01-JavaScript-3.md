@@ -151,7 +151,52 @@ console.log(filterItems("an")); // ['banana', 'mango', 'orange']
 });
 ```
 
-![ex_screenshot](./img/2.JPG)
+<table>
+ <thead>
+  <tr>
+   <th scope="col"><code>callback</code></th>
+   <th scope="col"><code>accumulator</code></th>
+   <th scope="col"><code>currentValue</code></th>
+   <th scope="col"><code>currentIndex</code></th>
+   <th scope="col"><code>array</code></th>
+   <th scope="col">반환 값</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <th scope="row">1번째 호출</th>
+   <td><code>0</code></td>
+   <td><code>1</code></td>
+   <td><code>1</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>1</code></td>
+  </tr>
+  <tr>
+   <th scope="row">2번째 호출</th>
+   <td><code>1</code></td>
+   <td><code>2</code></td>
+   <td><code>2</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>3</code></td>
+  </tr>
+  <tr>
+   <th scope="row">3번째 호출</th>
+   <td><code>3</code></td>
+   <td><code>3</code></td>
+   <td><code>3</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>6</code></td>
+  </tr>
+  <tr>
+   <th scope="row">4번째 호출</th>
+   <td><code>6</code></td>
+   <td><code>4</code></td>
+   <td><code>4</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>10</code></td>
+  </tr>
+ </tbody>
+</table>
 
 ```jsx
 // 초기값을 사용한 경우
@@ -167,7 +212,60 @@ console.log(filterItems("an")); // ['banana', 'mango', 'orange']
 10);
 ```
 
-![ex_screenshot](./img/1.JPG)
+<table>
+ <thead>
+  <tr>
+   <th scope="col">&nbsp;</th>
+   <th scope="col"><code>accumulator</code></th>
+   <th scope="col"><code>currentValue</code></th>
+   <th scope="col"><code>currentIndex</code></th>
+   <th scope="col"><code>array</code></th>
+   <th scope="col">반환값</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <th scope="row">1번째 호출</th>
+   <td><code>10</code></td>
+   <td><code>0</code></td>
+   <td><code>0</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>10</code></td>
+  </tr>
+  <tr>
+   <th scope="row">2번째 호출</th>
+   <td><code>10</code></td>
+   <td><code>1</code></td>
+   <td><code>1</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>11</code></td>
+  </tr>
+  <tr>
+   <th scope="row">3번째 호출</th>
+   <td><code>11</code></td>
+   <td><code>2</code></td>
+   <td><code>2</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>13</code></td>
+  </tr>
+  <tr>
+   <th scope="row">4번째 호출</th>
+   <td><code>13</code></td>
+   <td><code>3</code></td>
+   <td><code>3</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>16</code></td>
+  </tr>
+  <tr>
+   <th scope="row">5번째 호출</th>
+   <td><code>16</code></td>
+   <td><code>4</code></td>
+   <td><code>4</code></td>
+   <td><code>[0, 1, 2, 3, 4]</code></td>
+   <td><code>20</code></td>
+  </tr>
+ </tbody>
+</table>
 
 - 하나의 결과값을 반환
 - 원본 배열은 변경하지 않음
