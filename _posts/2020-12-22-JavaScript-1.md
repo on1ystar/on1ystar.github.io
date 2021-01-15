@@ -1,10 +1,12 @@
 ---
 layout: post
 title: JavaScript var vs. let vs. const
-date: 2020-12-22 +0400
+date: 2020-12-22 +0900
 categories: JavaScript
 ---
+
 ---
+
 <br>
 
 ## `var` 변수의 문제점
@@ -20,8 +22,8 @@ var y = 1;
 var x = 100;
 var y;
 
-console.log(x);  // 10
-console.log(y);  // 1
+console.log(x); // 10
+console.log(y); // 1
 ```
 
 ### → 함수 레벨 스코프
@@ -29,33 +31,33 @@ console.log(y);  // 1
 ```jsx
 var i = 1;
 
-if(true) {
-	var i = 10;
+if (true) {
+  var i = 10;
 }
 
-console.log(i);  // 10
+console.log(i); // 10
 
-for(var i = 0; i < 5; i++){
-	console.log(i);  // 0, 1, 2, 3, 4
+for (var i = 0; i < 5; i++) {
+  console.log(i); // 0, 1, 2, 3, 4
 }
 
-console.log(i);  // 5
+console.log(i); // 5
 ```
 
 이로 인해 전역변수가 남발하게 됨
 
 ### → 변수 호이스팅
 
-*변수 호이스팅(Variable hoisting):  변수 선언문이 코드의 선두로 끌어 올려진 것처럼 동작하는 자바스크립트 고유의 특징*
+_변수 호이스팅(Variable hoisting): 변수 선언문이 코드의 선두로 끌어 올려진 것처럼 동작하는 자바스크립트 고유의 특징_
 
 ```jsx
-console.log(foo);  // undefined -> 본래는 참조 에러(ReferenceError)가 발생해야 납득
+console.log(foo); // undefined -> 본래는 참조 에러(ReferenceError)가 발생해야 납득
 
-foo = 123;  // 변수 중복 선언처럼 동작
+foo = 123; // 변수 중복 선언처럼 동작
 
-console.log(foo);  // 123
+console.log(foo); // 123
 
-var foo;  
+var foo;
 ```
 
 `var` 키워드로 변수를 선언하면 **변수 호이스팅**에 의해 변수 선언문이 스코프의 선두로 끌어 올려진 것처럼 동작. 즉, 변수 호이스팅에 의해 `var` 키워드로 선언한 변수는 **변수 선언문 이전에 참조**할 수 있다.
@@ -84,33 +86,33 @@ var foo;
 
 ```jsx
 // var foo; -> 소스코드 평가 과정에 의해 먼저 실행, foo 변수가 선언되고 undefined로 초기화
-console.log(foo);  // undefined
+console.log(foo); // undefined
 
-var foo;  // 런타임 시 제외
+var foo; // 런타임 시 제외
 
-console.log(foo);  // undefined 
+console.log(foo); // undefined
 foo = 1;
-console.log(foo);  // 1
+console.log(foo); // 1
 ```
 
 하지만 `let` 키워드로 선언된 변수는 "선언 단계"와 "초기화 단계"가 분리되어 진행된다.
 
 ```jsx
 // var foo; -> 소스코드 평가 과정에 의해 먼저 실행되지만 선언 단계까지만 실행
-console.log(foo);  // ReferenceError: Cannot access 'foo' before initialization(TDZ)
+console.log(foo); // ReferenceError: Cannot access 'foo' before initialization(TDZ)
 
-var foo;  // 런타임 시 초기화 단계가 실행되어 undefined로 초기화
+var foo; // 런타임 시 초기화 단계가 실행되어 undefined로 초기화
 
-console.log(foo);  // undefined
+console.log(foo); // undefined
 foo = 1;
-console.log(foo);  // 1
+console.log(foo); // 1
 ```
 
 > 일시적 사각지대(Temporal Dead Zone; TDZ): 스코프의 시작 지점부터 초기화 시작 지점까지 변수를 참조할 수 없는 구간
 
 ### → `let` 키워드로 선언한 전역 변수는 전역 객체의 프로퍼티가 아님
 
-*이 내용은 추후 더 공부한 후 추가*
+_이 내용은 추후 더 공부한 후 추가_
 
 <br>
 

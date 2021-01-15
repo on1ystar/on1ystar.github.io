@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript Array 메서드 forEach, map, filter, reduce
-date: 2021-01-01 +0400
+date: 2021-01-01 +0900
 categories: JavaScript
 ---
 
