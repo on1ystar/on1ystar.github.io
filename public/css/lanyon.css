@@ -156,7 +156,7 @@ h6 {
 }
 @media (min-width: 30em) {
   .sidebar {
-    font-size: 0.75rem; /* 14px */
+    font-size: 1rem; /* 14px */
   }
 }
 

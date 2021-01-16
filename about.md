@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+index: 2
 ---
 
 <hr>
