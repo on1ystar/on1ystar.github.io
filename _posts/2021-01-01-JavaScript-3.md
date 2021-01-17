@@ -3,6 +3,11 @@ layout: post
 title: JavaScript Array 메서드 forEach, map, filter, reduce
 date: 2021-01-01 +0900
 categories: JavaScript
+sitemap:
+  changefreq: daily
+  priority: 1.0
+---
+
 ---
 
 ---

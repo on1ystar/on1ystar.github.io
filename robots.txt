@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://on1ystar.github.io/sitemap.xml

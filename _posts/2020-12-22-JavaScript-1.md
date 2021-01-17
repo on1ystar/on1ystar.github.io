@@ -3,6 +3,11 @@ layout: post
 title: JavaScript var vs. let vs. const
 date: 2020-12-22 +0900
 categories: JavaScript
+sitemap:
+  changefreq: daily
+  priority: 1.0
+---
+
 ---
 
 ---
