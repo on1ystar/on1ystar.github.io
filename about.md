@@ -11,7 +11,7 @@ index: 2
 **같이 일하고 싶은 Back-End 개발자** _in the future_ <br>
 
 e-mail: tjdwls0607@naver.com <br>
-github: <https://on1ystar.github.com> <br>
+github: <https://github.com/on1ystar> <br>
 
 <hr>
 
