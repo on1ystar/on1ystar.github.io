@@ -54,7 +54,7 @@ init();
 
 실패하면 두 번째 콜백함수에 `GeolocationPositionError`객체를 매개변수로 전달.
 
-<img src="{{'/public/img/javascript-4-1.png'}}">
+<img src="{{'/public/img/javascript/javascript-4-1.png'}}">
 
 `latitude`: 위도
 
@@ -90,7 +90,7 @@ weather api - [https://openweathermap.org/api](https://openweathermap.org/api)
 
 회원가입을 한 뒤,
 
-<img src="{{'/public/img/javascript-4-2.png'}}">
+<img src="{{'/public/img/javascript/javascript-4-2.png'}}">
 
 API keys 탭에서 Key 값을 복사해 온다.
 
@@ -102,7 +102,7 @@ const API_KEY = "";
 
 [https://openweathermap.org/current](https://openweathermap.org/current)
 
-<img src="{{'/public/img/javascript-4-3.png'}}">
+<img src="{{'/public/img/javascript/javascript-4-3.png'}}">
 
 이전에 위도와 경도 값을 얻었으므로 이를 활용해 위 url에 넣어 요청하면 JSON 형태의 데이터를 reponse 해준다.
 
@@ -149,7 +149,7 @@ function loadCoords() {
 
 실행한 뒤 Network 탭에 가보면 요청한 url로 response된 걸 확인할 수 있다.
 
-<img src="{{'/public/img/javascript-4-5.png'}}">
+<img src="{{'/public/img/javascript/javascript-4-5.png'}}">
 
 데이터를 활용하기 위해 `fetch`를 수정
 
@@ -167,7 +167,7 @@ function getWeather(lat, lon) {
 }
 ```
 
-<img src="{{'/public/img/javascript-4-6.png'}}">
+<img src="{{'/public/img/javascript/javascript-4-6.png'}}">
 
 이제 이 데이터를 용도에 맞게 쓰면 된다.
 

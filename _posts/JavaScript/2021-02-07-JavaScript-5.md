@@ -91,7 +91,7 @@ location = "http://www.mozilla.org";
 
 ---
 
-<img src="{{'/public/img/javascript-5-1.png'}}">
+<img src="{{'/public/img/javascript/javascript-5-1.png'}}">
 
 출처 : [https://sometimes-n.tistory.com/22](https://sometimes-n.tistory.com/22)
 
