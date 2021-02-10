@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  color: #515151;
+  color: #525f7f;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -65,7 +65,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: #0970b9;
   text-decoration: none;
 }
 a strong {
@@ -115,7 +115,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: #414b65;
 }
 
 /* Lists */
@@ -177,7 +177,8 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #111;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
 }
 pre code {
   padding: 0;

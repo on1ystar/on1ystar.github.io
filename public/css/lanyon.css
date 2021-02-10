@@ -50,7 +50,7 @@ h5,
 h6 {
   font-family: "Jua", sans-serif;
   font-weight: 400;
-  color: #313131;
+  color: #414b65;
   letter-spacing: -0.025rem;
 }
 
@@ -311,7 +311,7 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #2f374a;
 }
 .page-title,
 .post-title {
