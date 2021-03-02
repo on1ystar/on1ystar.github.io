@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me !
 index: 2
 ---
 
@@ -15,32 +15,28 @@ github: <https://github.com/on1ystar> <br>
 
 <hr>
 
-#### - 그나마 할 줄 아는 거
+#### 📌 혼자 찾아보며 할 수 있는 skill 📌
 
-- `python`
-- `Django`
-- `HTML/CSS`
+✔ `HTML/CSS`  
+✔ `Vanilla JS(ES6)`  
+✔ `python`  
+✔ `Django`  
+✔ `mysql`
 
-#### - 공부 중
+<br>
 
-- Machine Learning(교내 인공지능 학술 동아리)
-- `Vanilla JS(ES6)`
-- `Node.js`
-- `Express`
-- `MongoDB`
-- 12기 SW 마에스트로 도전
+#### 📌 공부 중 📌
 
-#### - 하고 싶은 거
+✔ `Node.js`  
+✔ `Express`  
+✔ `MongoDB`  
+✔ Machine Learning(교내 인공지능 학술 동아리)  
+✔ 12기 SW 마에스트로 도전
 
-- 혼자 여행가서 독서
-- 쓸만한 프로젝트 배포
-- 일하고 싶은 팀 만들기
+<br>
 
-### 활동
+#### ✨ 하고 싶은 거 ✨
 
----
-
-- 교내 보안 학술 동아리 CERT 3년 (부회장 1년)
-- 교내 인공지능 학술 동아리 COSMIC 1년
-- 추계학술대회 대학생 논문/졸업작품 공모전 최우수상(한국IT서비스학회)
-- 충북권 대학 창의 인재양성 우수성과 공유회 창의인재상(LINC+ 사업단)
+✔ 혼자 여행가서 무료함을 즐기기  
+✔ 쓸 만한 프로젝트 배포  
+✔ 같이 공부하며 일하고 싶은 팀 만들기
