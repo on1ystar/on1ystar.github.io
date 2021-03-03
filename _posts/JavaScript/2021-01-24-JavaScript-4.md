@@ -80,6 +80,8 @@ function handleGeoSucces(position) {
 }
 ```
 
+<br>
+
 ## 날씨 정보 가져오기
 
 ---
