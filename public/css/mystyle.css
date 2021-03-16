@@ -1,5 +1,9 @@
+.t-t-c {
+  text-align: center;
+}
+
 .text-to-center {
-  margin: 36px 0;
+  margin: 60px 0;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -7,13 +11,13 @@
 }
 
 .text-shadow-blue {
-  text-shadow: rgb(133, 151, 255) 1px 5px 35px;
+  text-shadow: rgb(133, 151, 255) 1px 3px 3px;
 }
 
 .text-shadow-orange {
-  text-shadow: rgb(255, 188, 133) 1px 5px 35px;
+  text-shadow: rgb(255, 188, 133) 1px 3px 3px;
 }
 
 .text-shadow-yellow {
-  text-shadow: rgb(255, 243, 133) 1px 5px 35px;
+  text-shadow: rgb(255, 243, 133) 1px 3px 3px;
 }

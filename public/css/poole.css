@@ -115,7 +115,8 @@ p {
 }
 
 strong {
-  color: #414b65;
+  color: #19233e;
+  text-shadow: rgb(249 248 115) 1px 0px 10px;
 }
 
 /* Lists */
