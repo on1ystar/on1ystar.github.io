@@ -134,6 +134,11 @@ dd {
   margin-bottom: 0.5rem;
 }
 
+em {
+  font-style: italic;
+  opacity: 0.7;
+}
+
 /* Misc */
 hr {
   position: relative;
@@ -164,7 +169,7 @@ code {
   font-size: 85%;
   color: #f9632c;
   font-weight: bold;
-  background-color: #ecf1ff;
+  background-color: #e8e8e8;
   border-radius: 3px;
 }
 pre {
