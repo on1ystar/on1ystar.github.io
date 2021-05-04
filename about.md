@@ -29,9 +29,8 @@ github: <https://github.com/on1ystar> <br>
 
 ✔ `Node.js`  
 ✔ `Express`  
-✔ `MongoDB`  
-✔ Machine Learning(교내 인공지능 학술 동아리)  
-✔ 12기 SW 마에스트로 도전
+✔ `MongoDB`   
+✔ 12기 SW 마에스트로 연수생~ing
 
 <br>
 
